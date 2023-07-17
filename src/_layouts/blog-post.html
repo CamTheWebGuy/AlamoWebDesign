@@ -1,0 +1,73 @@
+---
+layout: 'base.html'
+mainCSS: '/css/local.css'
+preloadCSS: '/css/blog.css'
+eleventyComputed:
+    description: '{{ blogDescription }}'
+    metaTitle: '{{ blogTitle }}'
+    tagTitle: '{{ titleTag }}'
+    preloadImg: '{{ image }}'
+    permalink: '/blog/{{ pageName | slug }}/index.html'
+---
+
+
+
+
+
+<section id="header">
+      <p class="container">Blog / Recent Posts</p>
+    </section>
+
+    <main>
+      <section id="blog">
+        <!-- ============================================ -->
+        <!--                 BLOG CONTENT                 -->
+        <!-- ============================================ -->
+
+        <article class="blog">
+          <div class="blog__post container">
+            <div class="blog__post--header">
+              <picture class="blog-mainImage">
+                    <img src="{{ image }}" alt="{{ imageAlt }}" width="795" height="400" decoding="async"/>
+                </picture>
+              <h1>
+                {{ blogTitle }}
+              </h1>
+              <div class="blog__post--info">
+                <img
+                  aria-hidden="true"
+                  src="https://camthewebguy.com/wp-content/uploads/2022/03/IMG_1799.png"
+                  alt="Cameron Anchondo"
+                />
+                <div class="blog__post--profile">
+                  <h3>{{ author }}</h3>
+                  <a href="#">{{ date | postDate }}</a><br />
+                </div>
+              </div>
+            </div>
+            <div aria-hidden="true" class="line"></div>
+<section id="blog-content">
+                {{ content | safe }}
+            </section>
+
+            
+           
+          </div>
+        </article>
+
+
+
+      </section>
+
+       <!-- ============================================ -->
+      <!--                   SIDE BAR                   -->
+      <!-- ============================================ -->
+
+      <section id="side-bar" class="container">
+        {% include "sidebar.html" %}
+      </section>
+    </main>
+
+
+
+

@@ -1,0 +1,83 @@
+---
+layout: 'base.html'
+description: 'Meta description for the page'
+metaTitle: 'Title that shows up on google searches'
+tagTitle: 'Blog'
+mainCSS: '/css/local.css'
+preloadCSS: '/css/blog.css'
+permalink: 'blog/'
+eleventyNavigation:
+    key: Blog
+    order: 500
+---
+
+<!-- Enter html code below -->
+
+ <section id="header">
+      <p class="container">Blog / Recent Posts</p>
+    </section>
+
+    <main>
+      <section id="blog">
+        <!-- ============================================ -->
+        <!--                 BLOG CONTENT                 -->
+        <!-- ============================================ -->
+
+         {% if collections.post | length == 0 %}
+            <h1>No Recent Posts</h1>
+        {% endif %}
+        {%- for post in collections.post | reverse -%}
+
+        <article class="blog">
+          <div class="blog__post container">
+            <div class="blog__post--header">
+              <picture class="blog-mainImage">
+                    <img
+                        src="{{ post.data.image }}"
+                        alt="{{ post.data.imageAlt }}"
+                        width="795"
+                        height="400"
+                        decoding="async"
+/>
+                </picture>
+              <h1>
+                {{ post.data.blogTitle }}
+              </h1>
+              <div class="blog__post--info">
+                <img
+                  aria-hidden="true"
+                  src="https://camthewebguy.com/wp-content/uploads/2022/03/IMG_1799.png"
+                  alt="Ryan Postell"
+                />
+                <div class="blog__post--profile">
+                  <h3>{{ post.data.author }}</h3>
+                  <a href="#">{{ post.date | postDate }}</a><br />
+                </div>
+              </div>
+            </div>
+            <div aria-hidden="true" class="line"></div>
+            <p>
+             {{ post.data.blogDescription }}
+            </p>
+            <button
+              class="button-solid"
+              onclick="location.href='{{ post.url }}'"
+              type="button"
+            >
+              Read More
+            </button>
+          </div>
+        </article>
+{%- endfor -%}
+
+
+      </section>
+
+       <!-- ============================================ -->
+      <!--                   SIDE BAR                   -->
+      <!-- ============================================ -->
+
+      <section id="side-bar" class="container">
+        {% include "sidebar.html" %}
+      </section>
+    </main>

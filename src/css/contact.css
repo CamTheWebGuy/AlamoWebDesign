@@ -1,0 +1,295 @@
+#page-header {
+  position: relative;
+  z-index: 90;
+}
+.mobile-svg {
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+}
+.desktop-svg {
+  display: none;
+}
+.quote {
+  margin-bottom: 40px;
+}
+.quote:before {
+  content: url(https://d33wubrfki0l68.cloudfront.net/a33c56222bd3cb59a950207d8d0cad6c6942fe08/4d66d/images/blob.svg);
+  position: absolute;
+  height: 1000px !important;
+  width: 200px !important;
+  z-index: -10;
+  bottom: 0;
+  right: 0;
+  opacity: 0.1;
+}
+.quote p:first-child {
+  margin-bottom: 15px;
+}
+.quote p:nth-child(2) {
+  margin-bottom: 15px;
+  font-size: 1.5em;
+}
+#contact {
+  height: auto;
+  padding-top: 0;
+  padding: 25px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.09);
+  box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.09);
+  margin-bottom: 50px;
+}
+.contact-topper {
+  font-weight: 700;
+  font-size: 2.1875em;
+  margin-bottom: 0;
+  position: relative;
+  margin-top: 50px;
+  color: #414141;
+}
+#contact h3 {
+  width: 100%;
+  margin-bottom: 25px;
+  margin-top: 0;
+}
+.contact-topper span {
+  color: var(--primary);
+  display: inline-block;
+}
+#valley-form {
+  display: relative;
+  margin-top: 100px;
+}
+#contact button[type='submit'],
+#contact input[type='email'],
+#contact input[type='tel'],
+#contact input[type='text'],
+#contact textarea {
+  font: 400 12px/16px 'Open Sans', Helvetica, Arial, sans-serif;
+  border-radius: 5px;
+}
+#contact {
+  position: relative;
+  width: 100%;
+  max-width: 390px;
+  background: #fff;
+  z-index: 20;
+}
+#contact h3 {
+  color: #1d2124;
+  display: block;
+  font-size: 1.75em;
+  font-weight: 700;
+}
+form p {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+#contact input[type='email'],
+#contact input[type='tel'],
+#contact input[type='text'],
+#contact textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #fff;
+  margin: 0 0 15px;
+  padding: 15px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#contact input[type='email']:hover,
+#contact input[type='tel']:hover,
+#contact input[type='text']:hover,
+#contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+  margin-bottom: 30px;
+}
+#contact button[type='submit'] {
+  cursor: pointer;
+  background: #43b7ff;
+  background: -o-linear-gradient(left, #43b7ff 0, #00ddf6 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#43b7ff),
+    to(#00ddf6)
+  );
+  background: linear-gradient(90deg, #43b7ff 0, #00ddf6 100%);
+  display: block;
+  margin-bottom: 60px;
+  font-size: 1em;
+}
+#contact button::before {
+  border-color: var(--primary);
+}
+#contact button::after {
+  border-color: var(--primary);
+}
+#contact button[type='submit']:hover {
+  opacity: 0.6;
+  -webkit-transition: background 0.3s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+#contact button[type='submit']:active {
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+#contact input:focus,
+#contact textarea:focus {
+  outline: 0;
+  border: 1px solid #999;
+}
+.form-submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+.border-group {
+  padding-left: 20px;
+  border-left: 4px solid var(--primary);
+  margin-bottom: 20px;
+}
+.border-group p {
+  margin: 0 !important;
+  font-weight: 400 !important;
+}
+.border-group p:first-child {
+  font-weight: 700 !important;
+}
+@media screen and (min-width: 500px) and (max-width: 1025px) {
+  .container {
+    padding: 0 36px;
+  }
+  .mobile-svg {
+    height: 100px;
+    width: auto;
+    margin-left: 0;
+    display: block;
+  }
+  #valley-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: 600px;
+  }
+  .quote {
+    width: 300px;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    position: relative;
+    margin-left: 70px;
+  }
+  .quote svg {
+    width: 200px !important;
+    height: auto;
+  }
+  #contact {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    z-index: 100;
+  }
+  .container {
+    position: relative;
+    z-index: 100;
+  }
+  form h3 {
+    position: relative;
+  }
+  .quote:before {
+    display: none;
+  }
+  .form-wrapper {
+    position: relative;
+  }
+  .form-wrapper:before {
+    content: url(https://d33wubrfki0l68.cloudfront.net/images/09b3d16df20ac21ea31deece1a5054ad3fb66fff/blob.2.png);
+    position: absolute;
+    height: 600px !important;
+    width: 500px !important;
+    z-index: 0;
+    top: -40px;
+    left: -100px;
+    opacity: 0.1;
+  }
+}
+@media screen and (min-width: 1026px) {
+  #contact {
+    max-width: 500px;
+  }
+  .container {
+    max-width: 1100px;
+  }
+  #valley-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 1000px;
+    margin: 100px auto 100px auto;
+    padding-top: 200px;
+    height: 300px;
+    overflow: visible;
+  }
+  #contact textarea {
+    height: 200px;
+  }
+  .quote {
+    width: 400px;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    position: relative;
+    z-index: 100;
+  }
+  .quote::before {
+    display: none;
+  }
+  .form-wrapper:before {
+    content: url(https://d33wubrfki0l68.cloudfront.net/images/09b3d16df20ac21ea31deece1a5054ad3fb66fff/blob.2.png);
+    position: absolute;
+    height: 600px !important;
+    width: 500px !important;
+    z-index: 1;
+    top: 150px;
+    left: -50px;
+    opacity: 0.1;
+  }
+  .mobile-svg {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 3500px) {
+  #valley-form {
+    margin-bottom: -200px;
+  }
+}

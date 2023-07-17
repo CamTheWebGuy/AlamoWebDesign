@@ -1,0 +1,98 @@
+<!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+{% set navPages = collections.all | eleventyNavigation %}
+
+
+
+<header>
+      <button
+        class="dark-mode-button top-dark-mode-button"
+        aria-label="dark mode toggle"
+      >
+        <span aria-hidden="true" class="dark-toggle">
+          <span class="DTspan"></span>
+        </span>
+      </button>
+      <!-- Desktop Navbar -->
+      <div class="mobile-wrapper">
+        <div class="mobile-nav container mobile-nav-container">
+          <img
+            id="mobile-logo"
+            src="/assets/img/alamo-web-design-san-antonio-tx.png"
+            alt="mobile_company_logo"
+            height="60"
+          />
+          <div aria-hidden="true" class="neon">
+            <span>A</span>
+            <span>f</span>
+            <span>t</span>
+            <span>e</span>
+            <span>r</span>
+
+            <span>D</span>
+            <span>a</span>
+            <span>r</span>
+            <span>k</span>
+          </div>
+          <!-- Hamburger Menu -->
+          <button
+            aria-label="open the menu"
+            id="menu-button"
+            class="hamburger hamburger--spring"
+            onclick="toggleNav()"
+            type="button"
+          >
+            <span aria-hidden="true" class="hamburger-box">
+              <span aria-hidden="true" class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <!-- ============================================ -->
+      <!--                   NAVIGATION                 -->
+      <!-- ============================================ -->
+
+      <nav>
+        <div class="navbar-menu">
+          <div id="side-menu" class="side-nav">
+            <img
+              src="/assets/img/alamo-web-design-san-antonio-tx.png"
+              alt="Alamo Web Design San Antonio TX"
+              width="100px"
+            />
+            <div aria-hidden="true" class="neon" id="desktop-neon">
+              <span>A</span>
+              <span>f</span>
+              <span>t</span>
+              <span>e</span>
+              <span>r</span>
+
+              <span>D</span>
+              <span>a</span>
+              <span>r</span>
+              <span>k</span>
+            </div>
+            <ul id="on-top" class="navbar-links">
+
+
+                {%- for entry in navPages %}
+                    <li>
+                        <a 
+                        {% if entry.url == page.url %} class="active-menu" {% endif %}
+                        href="{{ entry.url }}"
+                    >
+                            {{ entry.title }}
+                        </a>
+                    </li>
+                {%- endfor %}
+    =
+
+
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>

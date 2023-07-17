@@ -14,14 +14,15 @@ tags:
 image: https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80
 imageAlt: Coding
 ---
-### Static Websites (Hand Coded) vs Dynamic Websites (WordPress, Wix, etc.)
+
+<h3 class="blog-h3">Static Websites (Hand Coded) vs Dynamic Websites (WordPress, Wix, etc.)</h3>
 
 #### Key Takeaways:
 
-* Static websites coded from scratch load up to 10 times faster than page builders like WordPress. If your website takes more than 3 seconds to load, the majority of your visitors will abandon the site, losing customers.
-* Google indexes your website based on how your mobile site performs, and page builder mobile sites are not as optimized, not as fast, not as well built, and often times not 100% responsive, which could hinder your search rankings.
-* My hand-made static sites are coded mobile first, meaning I write the code starting with mobile screens, then adding code for tablet and desktop. This makes mobile more responsive, optimized, and incredibly fast to load - improving your website's performance on Google and making sure visitors don't abandon your site.
-* WordPress is notoriously known for its vulnerabilities and needs to be updated regularly to patch security flaws that hackers can use to compromise your website. Hand-made static sites cannot be compromised as easily, and are virtually impenetrable because of their simplicity and lack of entry points to hack.
+- Static websites coded from scratch load up to 10 times faster than page builders like WordPress. If your website takes more than 3 seconds to load, the majority of your visitors will abandon the site, losing customers.
+- Google indexes your website based on how your mobile site performs, and page builder mobile sites are not as optimized, not as fast, not as well built, and often times not 100% responsive, which could hinder your search rankings.
+- My hand-made static sites are coded mobile first, meaning I write the code starting with mobile screens, then adding code for tablet and desktop. This makes mobile more responsive, optimized, and incredibly fast to load - improving your website's performance on Google and making sure visitors don't abandon your site.
+- WordPress is notoriously known for its vulnerabilities and needs to be updated regularly to patch security flaws that hackers can use to compromise your website. Hand-made static sites cannot be compromised as easily, and are virtually impenetrable because of their simplicity and lack of entry points to hack.
 
 In the web development world there are two types of websites - static and dynamic. A static site is a site that has only the main building blocks of web development: html, css, and JavaScript. There are no databases or functionalities or manipulating data or anything fancy. It’s just displaying the page as it was created. These three coding languages make up everything you can see on a website and in many cases - is all you need. When you load a static site, your browser is what reads and compiles the code for the website and loads it instantly. Every user is loading the same exact content. And one of the best ways to make a static site is to code it by hand (which is what I do best!) or with a static site generator.
 
@@ -29,7 +30,7 @@ A dynamic site (WordPress, page builders) is one that uses additional server si
 
 Dynamic sites would include websites built by WordPress, Wix, Squarespace, GoDaddy, page builder, or built in php, etc. These page builders store the assets and content in a database and when someone visits the website, the server checks its inventory of stuff that the browser is asking for and it pulls them from that database and Frankenstein them together into landing page that you see. While these page builders make it easy to create your own website and for cheap, there are HUGE drawbacks when compared to the static websites that I build.
 
-### Why are static websites faster than dynamic websites?
+<h3 class="blog-h3">Why are static websites faster than dynamic websites?</h3>
 
 One of the most important aspects of your website ranking on google is how fast it loads and performs - especially on mobile. The problem with dynamic websites (WordPress, Wix, etc) is that the server takes more time to check the database and put everything together. And the more plug ins and extra stuff you have on your site the more you will only slow it down. This is critical because studies have shown that majority of users will abandon a website if it takes more than 3 seconds to load. So if your website is taking more than 3 seconds to load, what’s the point in even having it if a majority of the users won’t even view it? That’s one the BIGGEST drawbacks that I see with WordPress and Wix sites - they can take too long to load and cost you money.
 
@@ -43,7 +44,7 @@ If it’s load time is over 3 seconds chances are people are leaving before they
 
 Speaking of Google and speed, they recently made an update to their search algorithm in which they rank your website based on how the mobile site performs, called Mobile First Indexing. So basically, the faster your mobile site loads, the better you rank. That’s where static sites win every time.
 
-### Mobile first programming and increased site speed
+<h3 class="blog-h3">Mobile first programming and increased site speed</h3>
 
 Mobile first programming is something that can’t be done by a page builder. It’s a design pattern in which we as developers write the code starting with the mobile screens first and adding code for tablet and desktop as we go down the file. When the browser reads the CSS file to see how the page should be structured and styled, it reads it from top to bottom. If we start out at the top writing desktop code, the browser will read that first and load it, then it will keep going down the page checking for rules for different screen sizes and loading those designs editing the desktop content to fit into mobile. If you’re on mobile, and the mobile code is at the bottom of the CSS file, the browser has to read ALL of the code in that file, loading desktop code, checks the screen size rule and says “yup, this is mobile alright”. It then has to break everything down from desktop and squeeze it all into the mobile screen. This wastes time and resources.
 
@@ -51,7 +52,7 @@ With the mobile first approach, your mobile code is at the top and is read first
 
 Let me tell you from experience - it’s easier to make content grow into its space instead of shrinking it down and cramming it in the smaller spaces. Mobile first programming + static site development will make your site lightning fast. It might even shock some people.
 
-### Why are static sites more secure than dynamic sites?
+<h3 class="blog-h3">Why are static sites more secure than dynamic sites?</h3>
 
 Dynamic sites have databases, and server-side platforms that can be attacked when they are trying to access the database or content management systems that store all your website's data. So as the server is building the site and getting it ready for the browser, hackers can inject themselves into the process and compromise your website.
 
@@ -69,13 +70,13 @@ And since WordPress is the most popular content management system (CMS) for webs
 
 But what about the servers that these static sites live on? Can’t they be compromised and the site can come down? Nope! When your static site is served up by a Content Delivery Network (CDN) your site lives on multiple servers across the globe ready to be accessed. So when one server goes down, it can just be loaded up from a other one in a different location. No down time!
 
-### Handmade static sites vs WordPress and Wix
+<h3 class="blog-h3">Handmade static sites vs WordPress and Wix</h3>
 
 Overall, hand-made static websites will almost ALWAYS beat page builders like WordPress and Wix. Static websites load in milliseconds compared to the multiple seconds or more it can take a WordPress or Wix site. And the fact that they are almost virtually impenetrable from being hacked or compromised due to their simplicity makes them the clear winner in the fight for your business.
 
 Dynamic sites also currently offer no ways to do mobile first programming and are unable to take advantage of its benefits. One of the problems you can see for yourself is to find a Wix site and try to resize the browser. You'll notice they don't offer a tablet version of your site and the whole page is not very responsive, meaning the content doesn't change or move as the screen gets bigger or smaller. On certain screen sizes your webpage content is squeezing into it's box and is actually being cut off on the edges of the screen because it has nowhere to go and now people can't even read what is there. Or text can start wrapping around images in odd ways that distort the layout, making your site appear broken. These page builders don't give you the amount of control you need to make your site responsive for any possible screen size without knowing how to code and access page builders API to talk to their system and make very custom, complicated work.
 
-### Why should I pay someone to make a website when I can make it myself?
+<h3 class="blog-h3">Why should I pay someone to make a website when I can make it myself?</h3>
 
 Wix and WordPress advertise that anyone can make a website for free, which makes it very appealing to small businesses that don’t have the money to hire a developer like me to make them one. However, if page speed, loading times, security, converting more customers, and Google rankings are concerns you would like to have addressed in a website and want to stand out from the competition then I highly advise finding someone to make a static website for you (like me!). Think about it this way, anyone can just buy paint and go paint their own house. But not everyone will be able to do it with the same quality as a professional, and their house will suffer for it and look terrible. Much like painting, web development is a trade and can get a little expensive. Having a static site built by a developer can run anywhere from $1800 - $3,000+ depending on complexity. So it’s natural to be attracted to page builders and save money by doing it yourself. There’s nothing wrong with that! But if you’re looking to take your business to the next step, stop leaving money on the table and consider getting a static site made. Make something that will perform miles better and get a one up on the competition
 
@@ -83,7 +84,7 @@ And there are some developers who make custom WordPress sites and they do a good
 
 Chances are your competition will have a WordPress site too. Some developers or agencies charge thousands to make these simple WordPress sites that could have been made static, and many of them are just template pump and dumps they hand off to you with no support, wham bam thank you ma'am. So finding a good developer or agency will be difficult, but it will be well worth the trouble. You just have to take some time to weed through the bad ones from the good ones.
 
-### Invest in your website
+<h3 class="blog-h3">Invest in your website</h3>
 
 In my experience there are two types of people: business owners, and entrepreneurs. One of the most common mistakes business owners make when it comes to a website is that they see it as an expense, rather than an investment. Entrepreneurs understand that when you spend money on the business it’s an investment INTO the business, not an expense, and can justify the value of it by seeing the return that investment will bring. For example, you buy a website from a developer for $3000 to make a static site for you. Seems like a lot, but with a better looking and better performing site you might be able to convert visitors into customers who would have left the site because it took too long to load or looked out of date and awful and like you can’t be trusted. $3,000 all of sudden is bringing in an extra $10,000 a year or more after some time in new business. If you could spend $3,000 and in a year make $10,000 off of it, would you make that “investment”? I know I pulled those numbers out of nowhere, but that doesn't mean it's not possible. I've had some clients double their business after a year working with me.
 
@@ -93,7 +94,7 @@ Websites are a lot like tattoos - you get what you pay for. If you want somethin
 
 So with all these cheap and quick options available to build a website, it’s important to know that a great website will never come from that price point. It should actually be a deterrent. If I had to get surgery, I certainly wouldn’t trust the doc I found online to do it for about $350 when it costs $4000 everywhere else. It just screams lack of quality and lack of effort and somewhere along the line they are skipping a few steps to crank it out as fast as possible to make as much money as possible with as little effort as possible. Your business deserves better. If you want the cheap site, expect cheap results. But if you want it done right, that’s where a developer comes in.
 
-### Conclusion:
+<h3 class="blog-h3">Conclusion:</h3>
 
 In the end, whether you go for a static site or a dynamic site, it all comes down to your budget and priorities. If you don’t have a lot to spend on a website and just need something out there then it’s okay to use WordPress or Wix. But if you have the budget to get something done that’s a step up and can maximize your online presence then having a static site made is your best return on investment. Or if you need something bigger that involves the need for a database or the ability to edit your content yourself, then WordPress and other page builders are the way to go
 

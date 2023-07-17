@@ -1,6 +1,6 @@
 ---
 layout: 'base.html'
-description: 'Meta description for the page'
+description: 'Alamo Web Design is a locally owned custom web design company in San Antonio TX. We specialize in custom websites &amp; SEO logos for local businesses.'
 metaTitle: 'Title that shows up on google searches'
 tagTitle: 'Pixel Perfect Websites'
 preloadImg: '/images/landing-1920w.webp'
@@ -1354,36 +1354,38 @@ eleventyNavigation:
           </h2>
           <button
             class="button-solid quote-button"
-            onclick="location.href='/html/contact.html'"
+            onclick="location.href='/contact'"
             type="button"
           >
             GET IN TOUCH!
           </button>
-          <img
-          loading="lazy"
-            class="mock-up desktop-display"
-            src="assets/img/website-design-san-antonio-bg.png"
-            alt="mockup of a website on computer desktop and phone"
-          />
-          <img
-          loading="lazy"
-            class="mock-up mobile-display"
-            src="assets/img/website-design-san-antonio-bg.png"
-            alt="a mockup of a website on computer desktop and phone"
-          />
+
+          <picture>
+            <source  class="mock-up desktop-display" srcset="/assets/img/website-design-san-antonio-bg.webp" type="image/webp">
+            <source  class="mock-up desktop-display" srcset="assets/img/website-design-san-antonio-bg.png" type="image/png"> 
+            <img  class="mock-up desktop-display" src="assets/img/website-design-san-antonio-bg.png" alt="mockup of a website on computer desktop and phone">
+          </picture>
+
+          <picture >
+            <source class="mock-up mobile-display" srcset="/assets/img/website-design-san-antonio-bg.webp" type="image/webp">
+            <source class="mock-up mobile-display" srcset="assets/img/website-design-san-antonio-bg.png" type="image/png"> 
+            <img class="mock-up mobile-display" src="assets/img/website-design-san-antonio-bg.png" alt="mockup of a website on computer desktop and phone">
+          </picture>
+          
+      
         </div>
         <img
         loading="lazy"
           aria-hidden="true"
           class="swoop light-swoop"
-          src="https://d33wubrfki0l68.cloudfront.net/25e94eabb1cdec2613bd265d645dc15324bacfe8/86f45/images/landing-swoosh.svg"
+          src="/assets/img/landing-swoosh.svg"
           alt=""
         />
         <img
         loading="lazy"
           aria-hidden="true"
           class="swoop dark-swoop"
-          src="https://d33wubrfki0l68.cloudfront.net/2c499269a4a33fbbfca28010db8fdbb668a23c1c/beba6/images/landing-swoosh-dark.svg"
+          src="/assets/img/landing-swoosh-dark.svg"
           alt=""
         />
       </section>
@@ -2074,12 +2076,18 @@ eleventyNavigation:
           </div>
           <div class="example-group">
             <div class="example">
-              <img
+
+              <picture>
+                <source srcset="/assets/img/alamo-web-design-san-antonio-template-1.webp" type="image/webp">
+                <source srcset="/assets/img/alamo-web-design-san-antonio-template-1.png" type="image/png">
+                <img
                loading="lazy"
                 src="/assets/img/alamo-web-design-san-antonio-template-1.png"
                 width="300px"
                 alt="Alamo Web Design Template 1"
               />
+              </picture>
+              
               <h3>Alamo Professional</h3>
               <h4>San Antonio, TX</h4>
               <p>
@@ -2161,7 +2169,12 @@ eleventyNavigation:
         </div>
         <div class="spotlight container">
           <div class="partner">
-            <img loading="lazy" src="assets/img/cam.png" alt="picture of Cameron" />
+            <picture>
+              <source srcset="/assets/img/cam.webp" type="image/webp">
+              <source srcset="/assets/img/cam.png" type="image/png">
+              <img loading="lazy" src="/assets/img/cam.png" alt="picture of Cameron" />
+            </picture>
+            
             <h3>Cameron A.</h3>
             <h4>Owner/Developer</h4>
           </div>
@@ -2273,7 +2286,7 @@ eleventyNavigation:
             </ul>
             <button
               class="button-solid"
-              onclick="location.href='/html/contact.html'"
+              onclick="location.href='/contact'"
               type="button"
             >
               CONTACT US
@@ -2303,7 +2316,7 @@ eleventyNavigation:
             </ul>
             <button
               class="button-solid services-button"
-              onclick="location.href='/html/contact.html'"
+              onclick="location.href='/contact'"
               type="button"
             >
               CONTACT US

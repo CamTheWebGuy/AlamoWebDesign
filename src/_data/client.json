@@ -4,7 +4,8 @@
   "phone": "951-941-8193",
   "phoneFormatted": "(951) 941-8193",
   "address": {
-    "mapLink": "https://goo.gl/maps/UAQn4vuGDiwv7DV39"
+    "mapLink": "https://goo.gl/maps/UAQn4vuGDiwv7DV39",
+    "city": "San Antonio, TX"
   },
   "domain": "www.alamowebdesign.com"
 }

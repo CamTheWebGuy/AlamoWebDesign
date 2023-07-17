@@ -4650,7 +4650,7 @@ body.dark-mode .box {
     overflow: visible;
   }
   .boxes-container-.box-services {
-    content: url(https://d33wubrfki0l68.cloudfront.net/images/d6827e7a5b9c426bfc805357650e2747809aa142/blob.png);
+    content: url(/assets/img/blob.png);
     position: absolute;
     height: 40px;
     width: 300px;
@@ -4805,7 +4805,6 @@ body.dark-mode .box {
 
 /* BLOG CSS */
 
-/*! CSS Used from: https://d33wubrfki0l68.cloudfront.net/bundles/b471762a50eea50603a2d4d4076a857c6033dd95.css */
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;

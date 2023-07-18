@@ -14,15 +14,14 @@ tags:
 image: https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80
 imageAlt: Coding
 ---
-
 <h3 class="blog-h3">Static Websites (Hand Coded) vs Dynamic Websites (WordPress, Wix, etc.)</h3>
 
 #### Key Takeaways:
 
-- Static websites coded from scratch load up to 10 times faster than page builders like WordPress. If your website takes more than 3 seconds to load, the majority of your visitors will abandon the site, losing customers.
-- Google indexes your website based on how your mobile site performs, and page builder mobile sites are not as optimized, not as fast, not as well built, and often times not 100% responsive, which could hinder your search rankings.
-- My hand-made static sites are coded mobile first, meaning I write the code starting with mobile screens, then adding code for tablet and desktop. This makes mobile more responsive, optimized, and incredibly fast to load - improving your website's performance on Google and making sure visitors don't abandon your site.
-- WordPress is notoriously known for its vulnerabilities and needs to be updated regularly to patch security flaws that hackers can use to compromise your website. Hand-made static sites cannot be compromised as easily, and are virtually impenetrable because of their simplicity and lack of entry points to hack.
+* Static websites coded from scratch load up to 10 times faster than page builders like WordPress. If your website takes more than 3 seconds to load, the majority of your visitors will abandon the site, losing customers.
+* Google indexes your website based on how your mobile site performs, and page builder mobile sites are not as optimized, not as fast, not as well built, and often times not 100% responsive, which could hinder your search rankings.
+* My hand-made static sites are coded mobile first, meaning I write the code starting with mobile screens, then adding code for tablet and desktop. This makes mobile more responsive, optimized, and incredibly fast to load - improving your website's performance on Google and making sure visitors don't abandon your site.
+* WordPress is notoriously known for its vulnerabilities and needs to be updated regularly to patch security flaws that hackers can use to compromise your website. Hand-made static sites cannot be compromised as easily, and are virtually impenetrable because of their simplicity and lack of entry points to hack.
 
 In the web development world there are two types of websites - static and dynamic. A static site is a site that has only the main building blocks of web development: html, css, and JavaScript. There are no databases or functionalities or manipulating data or anything fancy. It’s just displaying the page as it was created. These three coding languages make up everything you can see on a website and in many cases - is all you need. When you load a static site, your browser is what reads and compiles the code for the website and loads it instantly. Every user is loading the same exact content. And one of the best ways to make a static site is to code it by hand (which is what I do best!) or with a static site generator.
 
@@ -45,6 +44,8 @@ If it’s load time is over 3 seconds chances are people are leaving before they
 Speaking of Google and speed, they recently made an update to their search algorithm in which they rank your website based on how the mobile site performs, called Mobile First Indexing. So basically, the faster your mobile site loads, the better you rank. That’s where static sites win every time.
 
 <h3 class="blog-h3">Mobile first programming and increased site speed</h3>
+
+![](https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80)
 
 Mobile first programming is something that can’t be done by a page builder. It’s a design pattern in which we as developers write the code starting with the mobile screens first and adding code for tablet and desktop as we go down the file. When the browser reads the CSS file to see how the page should be structured and styled, it reads it from top to bottom. If we start out at the top writing desktop code, the browser will read that first and load it, then it will keep going down the page checking for rules for different screen sizes and loading those designs editing the desktop content to fit into mobile. If you’re on mobile, and the mobile code is at the bottom of the CSS file, the browser has to read ALL of the code in that file, loading desktop code, checks the screen size rule and says “yup, this is mobile alright”. It then has to break everything down from desktop and squeeze it all into the mobile screen. This wastes time and resources.
 

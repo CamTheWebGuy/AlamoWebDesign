@@ -45,9 +45,11 @@ Speaking of Google and speed, they recently made an update to their search algor
 
 <h3 class="blog-h3">Mobile first programming and increased site speed</h3>
 
-![](https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80)
+Mobile first programming is something that can’t be done by a page builder. It’s a design pattern in which we as developers write the code starting with the mobile screens first and adding code for tablet and desktop as we go down the file. When the browser reads the CSS file to see how the page should be structured and styled, it reads it from top to bottom. If we start out at the top writing desktop code, the browser will read that first and load it, then it will keep going down the page checking for rules for different screen sizes and loading those designs editing the desktop content to fit into mobile. 
 
-Mobile first programming is something that can’t be done by a page builder. It’s a design pattern in which we as developers write the code starting with the mobile screens first and adding code for tablet and desktop as we go down the file. When the browser reads the CSS file to see how the page should be structured and styled, it reads it from top to bottom. If we start out at the top writing desktop code, the browser will read that first and load it, then it will keep going down the page checking for rules for different screen sizes and loading those designs editing the desktop content to fit into mobile. If you’re on mobile, and the mobile code is at the bottom of the CSS file, the browser has to read ALL of the code in that file, loading desktop code, checks the screen size rule and says “yup, this is mobile alright”. It then has to break everything down from desktop and squeeze it all into the mobile screen. This wastes time and resources.
+
+
+If you’re on mobile, and the mobile code is at the bottom of the CSS file, the browser has to read ALL of the code in that file, loading desktop code, checks the screen size rule and says “yup, this is mobile alright”. It then has to break everything down from desktop and squeeze it all into the mobile screen. This wastes time and resources.
 
 With the mobile first approach, your mobile code is at the top and is read first. So when you’re on your phone and the site loads, it loads the mobile styling code first, checks the screen size rules and says “welp, that’s it boys, put that code up on the screen. It’s showtime!”.
 

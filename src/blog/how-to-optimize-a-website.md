@@ -12,8 +12,9 @@ author: Cameron Anchondo
 date: 2023-07-22T03:17:12.796Z
 tags:
   - post
+  - featured
 image: https://unsplash.com/photos/hGV2TfOh0ns/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8Njd8fHdlYnNpdGUlMjBzcGVlZHxlbnwwfDB8fHwxNjg5OTk2MzAzfDA&force=true&w=640
-imageAlt: Site Speed
+imageAlt: Site Spee
 ---
 A  while back Google announces their [Core Vitals](https://web.dev/vitals/) metrics and how it will be the leading ranking factor going forward. It is basically favoring websites that have the fastest and best mobile experience. And that is what I am going to show you how to do right now.
 

@@ -3,11 +3,12 @@ pageName: how-to-optimize-a-website
 blogTitle: How to optimize a website's Core Vitals and Page Speed Score
 titleTag: How to optimize a website's Core Vitals and Page Speed Score | Alamo
   Web Designs
-shortDesc: Google's new Core Vitals metrics are changing how sites get ranked
-  based on and optimized mobile experience. I will show you everything you need
-  to know about how to satisfy these new metrics and get 95+ scores on speed and
-  performance for hand made HTML and CSS websites.
-blogDescription: How to optimize your site speed.
+shortDesc: Site speed is an important metric for your website. In this post I'll
+  show you how to optimize your site speed.
+blogDescription: Google's new Core Vitals metrics are changing how sites get
+  ranked based on and optimized mobile experience. I will show you everything
+  you need to know about how to satisfy these new metrics and get 95+ scores on
+  speed and performance for hand made HTML and CSS websites.
 author: Cameron Anchondo
 date: 2023-07-22T03:17:12.796Z
 tags:

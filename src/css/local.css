@@ -4890,7 +4890,7 @@ h3 {
 <---          Reviews           -->
 <--- -------------------------- -*/
 
-/* Mobile - 360px */
+/* Mobile - 360px. */
 @media only screen and (min-width: 0rem) {
   :root {
     /* remove this whole :root and put in your global css file that's shared on all pages, then just remove this section from all other Stitches you add later, only need this once in your global stylesheet */

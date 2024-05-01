@@ -1,0 +1,410 @@
+/*-- -------------------------- -->
+<---          Banner            -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #banner-310 {
+        /* 144px - 252px */
+        padding-top: clamp(9rem, 25vw, 15.75rem);
+        /* 80px - 140px */
+        padding-bottom: clamp(5rem, 13vw, 8.75rem);
+        position: relative;
+        z-index: 1;
+    }
+    #banner-310 .cs-container {
+        width: 100%;
+        max-width: 80rem;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #banner-310 .cs-int-title {
+        /* 39px - 49px */
+        font-size: clamp(2.4375rem, 4.5vw, 3.0625rem);
+        font-weight: 900;
+        line-height: 1.2em;
+        text-align: center;
+        max-width: 43.75rem;
+        margin: 0 auto 0.75rem;
+        color: var(--bodyTextColorWhite);
+        position: relative;
+    }
+    #banner-310 .cs-breadcrumbs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #banner-310 .cs-link {
+        /* 14px - 16px */
+        font-size: clamp(0.875rem, 1.5vw, 1rem);
+        line-height: 1.2em;
+        text-decoration: none;
+        color: var(--bodyTextColorWhite);
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #banner-310 .cs-link:last-of-type {
+        /* remove the chevron on the last list item */
+    }
+    #banner-310 .cs-link:last-of-type::after {
+        display: none;
+    }
+    #banner-310 .cs-link:after {
+        /* chevron - added as pseudo to make adding and removing them easier */
+        content: "";
+        width: 0.4375rem;
+        height: 0.75rem;
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+        background: url("https://csimg.nyc3.digitaloceanspaces.com/Banners/chevron-right.svg");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #banner-310 .cs-link.cs-active {
+        color: var(--primaryLight);
+    }
+    #banner-310 .cs-background {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        z-index: -1;
+    }
+    #banner-310 .cs-background:before {
+        /* black overlay box */
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: #000;
+        opacity: 0.72;
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    #banner-310 .cs-background img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+/*-- -------------------------- -->
+<---        Content Page        -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    @keyframes floatAnimation {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-2rem);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+    @keyframes floatAnimation2 {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-3rem);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+    #content-page-1533 {
+      padding: 6rem 1rem;
+      background-color: #fff;
+      /* clips the wave background from causing overflow issues when it goes off screen */
+      overflow: hidden;
+      position: relative;
+      z-index: 1;
+    }
+    #content-page-1533 .cs-container {
+      width: 100%;
+      max-width: 80rem;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* 40px - 64px */
+      gap: clamp(2.5rem, 4vw, 4rem);
+      position: relative;
+    }
+    #content-page-1533 .cs-content {
+      /* set text align to left if content needs to be left aligned */
+      text-align: left;
+      width: 100%;
+      max-width: 46.125rem;
+      display: flex;
+      flex-direction: column;
+      /* centers content horizontally, set to flex-start to left align */
+      align-items: flex-start;
+    }
+    #content-page-1533 .cs-title {
+      font-size: var(--headerFontSize);
+      font-weight: 900;
+      line-height: 1.2em;
+      text-align: inherit;
+      width: 100%;
+      max-width: 100%;
+      margin: 0 0 1rem 0;
+      color: var(--headerColor);
+      position: relative;
+    }
+    #content-page-1533 h2,
+    #content-page-1533 h3,
+    #content-page-1533 h4,
+    #content-page-1533 h5,
+    #content-page-1533 h6 {
+      font-weight: 700;
+      text-align: inherit;
+      margin: 0 0 1rem 0;
+      color: var(--headerColor);
+    }
+    #content-page-1533 h2 {
+      font-size: 2rem;
+      margin-top: 2rem;
+    }
+    #content-page-1533 h3 {
+      font-size: 1.5rem;
+      color: var(--primary);
+    }
+    #content-page-1533 h4,
+    #content-page-1533 h5,
+    #content-page-1533 h6 {
+      font-size: 1.25rem;
+    }
+    #content-page-1533 .cs-button-solid {
+      margin-bottom: 2rem;
+    }
+    #content-page-1533 .cs-no-margin {
+      margin: 0;
+    }
+    #content-page-1533 .cs-color {
+      color: var(--primary);
+    }
+    #content-page-1533 p {
+      font-size: var(--bodyFontSize);
+      line-height: 1.5em;
+      text-align: inherit;
+      width: 100%;
+      margin: 0 0 1rem 0;
+      color: var(--bodyTextColor);
+    }
+    #content-page-1533 p:last-of-type {
+      margin-bottom: 2rem;
+    }
+    #content-page-1533 p a {
+      font-size: inherit;
+      line-height: inherit;
+      text-decoration: underline;
+      color: var(--primary);
+      filter: brightness(120%);
+    }
+    #content-page-1533 ol,
+    #content-page-1533 ul {
+      padding-left: 1.5rem;
+      margin: 0 0 2rem 0;
+      color: var(--bodyTextColor);
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    #content-page-1533 ul li {
+      list-style: none;
+      color: #646464;
+      position: relative;
+    }
+    #content-page-1533 ul li:before {
+      /* custom list bullet */
+      content: '';
+      width: 3px;
+      height: 3px;
+      background: currentColor;
+      opacity: 1;
+      border-radius: 50%;
+      position: absolute;
+      display: block;
+      top: 0.625rem;
+      left: -0.75rem;
+    }
+    #content-page-1533 img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    #content-page-1533 .cs-image-group {
+      width: 32.625em;
+      height: 33.75em;
+      display: none;
+      position: relative;
+      z-index: 1;
+    }
+    #content-page-1533 .cs-background {
+      width: 100%;
+      height: 100%;
+      border-radius: 2.5em;
+      /* clips the corners of the children around the border radius */
+      overflow: hidden;
+      /* makes it cover the parent dimensions */
+      object-fit: cover;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+    #content-page-1533 .cs-background img {
+      width: 100%;
+      height: 100%;
+      /* makes it cover the parent like a backgorund image */
+      object-fit: cover;
+      display: block;
+    }
+    #content-page-1533 .cs-flower {
+      width: 9.5625em;
+      height: auto;
+      position: absolute;
+      right: -2em;
+      top: -2.25em;
+      z-index: 10;
+    }
+    #content-page-1533 .cs-floater {
+      width: 44.375em;
+      height: auto;
+      position: absolute;
+      left: 9.375em;
+      top: 25em;
+      z-index: -1;
+      animation-name: floatAnimation2;
+      animation-duration: 14s;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards;
+      animation-iteration-count: infinite;
+    }
+  }
+  /* Tablet - 768px */
+  @media only screen and (min-width: 48rem) {
+    /* #content-page-1533 .cs-container {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+    } */
+    #content-page-1533 .cs-content {
+      width: 60%;
+      max-width: 58.375rem;
+      /* prevents flexbox from squishing it */
+      flex: none;
+    }
+    #content-page-1533 .cs-image-group {
+      font-size: min(1.3vw, 1em);
+      display: block;
+      /* sends it to the right in the 2nd position */
+      order: 2;
+    }
+  }
+  /* Desktop - 1200px */
+  @media only screen and (min-width: 75rem) {
+    #content-page-1533 .cs-content {
+      width: 100%;
+    }
+  }
+  /* Dark Mode */
+  @media only screen and (min-width: 0rem) {
+    body.dark-mode #content-page-1533 {
+      background-color: var(--dark);
+    }
+    body.dark-mode #content-page-1533 .cs-title,
+    body.dark-mode #content-page-1533 .cs-text,
+    body.dark-mode #content-page-1533 h2,
+    body.dark-mode #content-page-1533 h3,
+    body.dark-mode #content-page-1533 h4,
+    body.dark-mode #content-page-1533 h5,
+    body.dark-mode #content-page-1533 h6,
+    body.dark-mode #content-page-1533 li,
+    body.dark-mode #content-page-1533 p {
+      color: var(--bodyTextColorWhite);
+    }
+    body.dark-mode #content-page-1533 .cs-color,
+    body.dark-mode #content-page-1533 a {
+      color: var(--primaryLight);
+    }
+    body.dark-mode #content-page-1533 p,
+    body.dark-mode #content-page-1533 li {
+      color: #ebebeb;
+    }
+    body.dark-mode #content-page-1533 .cs-floater {
+      opacity: .1;
+    }
+  }
+
+  .post-info{
+    display: flex
+  }
+
+  .post-author {
+    height: 5%!important;
+    width: 5%!important;
+    border-radius: 100%;
+    margin-right: 1rem;
+  }
+
+  .post-meta h3{
+    color: black!important;
+    font-size: 1rem!important;
+    font-weight: 400!important;
+    margin-bottom: 0!important;
+  }
+
+  .post-meta a{
+    text-decoration: none;
+    font-size: 0.7rem;
+  }
+
+  .blog-title {
+    padding: 3rem 0 0 0 ;
+  }
+
+  .line {
+    background: var(--primary);
+    width: 100%;
+    height: 1px;
+    margin-top: 1rem;
+  }
+
+  .post-content{
+    padding-top: 2rem;
+  }
+
+  .post-content p{
+    font-size: 1.1rem!important;
+    line-height: 1.8em!important;
+  }
+
+  .post-content h3{
+    font-size: 2rem!important;
+    color: black!important;
+    border-left: 4px solid var(--primary);
+    padding-left: 1rem;
+    margin-top: 50px!important;
+    margin-bottom: 50px!important;
+  }
+                                  

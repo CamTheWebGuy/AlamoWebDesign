@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
-    <head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-      <meta name="description" content="{{ description }}">
+    <meta name="description" content="{{ description }}" />
 
     <meta
       name="keywords"
@@ -18,13 +16,31 @@
     <meta name="theme-color" content="#43b7ff" />
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/assets/favicons/site.webmanifest">
-    <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#333333">
-    <meta name="msapplication-TileColor" content="#2b5797">
-    <meta name="theme-color" content="#333333">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/favicons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/assets/favicons/safari-pinned-tab.svg"
+      color="#333333"
+    />
+    <meta name="msapplication-TileColor" content="#2b5797" />
+    <meta name="theme-color" content="#333333" />
 
     <meta
       property="og:title"
@@ -45,12 +61,13 @@
     <link rel="canonical" href="https://www.alamowebdesign.com/" />
 
     <!-- CSS -->
-    <link rel="preload" as="image" href="{{ preloadImg }}"/>
+    <link rel="preload" as="image" href="{{ preloadImg }}" />
 
     <!-- Loading in page specific CSS sheets from css block -->
-    <link rel="stylesheet" href="/css/critical.css"/>
-    <link rel="stylesheet" href="{{ mainCSS }}">
-    <link rel="stylesheet" href="{{ preloadCSS }}">
+    <link rel="stylesheet" href="/css/critical.css" />
+    <link rel="stylesheet" href="{{ mainCSS }}" />
+    <link rel="stylesheet" href="{{ preloadCSS }}" />
+    <link rel="stylesheet" href="/css/footer.css" />
 
     <!-- jQuery -->
     <script
@@ -58,41 +75,40 @@
       src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
     ></script>
 
-     <title>
-            {% if page.url == '/'%}
-                {{ client.name }} | {{ tagTitle }} | {{ client.address.city }}
-            {% else %}
-                {{ tagTitle }} | {{ client.name }}
-            {% endif %}
-        </title>
+    <title>
+      {% if page.url == '/'%} {{ client.name }} | {{ tagTitle }} | {{
+      client.address.city }} {% else %} {{ tagTitle }} | {{ client.name }} {%
+      endif %}
+    </title>
   </head>
-    <body>
-        <!--Screen reader skip main nav-->
-        <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
+  <body>
+    <!--Screen reader skip main nav-->
+    <a class="skip" aria-label="skip to main content" href="#main"
+      >Click To Skip To Main Content</a
+    >
 
-        {% include "header.html" %}
-        <div>{{ content | safe }}</div>
-        {% include "footer.html" %}
+    {% include "header.html" %}
+    <div>{{ content | safe }}</div>
+    {% include "footer.html" %}
 
-        <script defer src="/assets/js/app.js"></script>
+    <script defer src="/assets/js/app.js"></script>
     <script>
       const bannerCloseButton = document.querySelector(
-        '#beta-form #beta-submit'
+        "#beta-form #beta-submit"
       );
       const bannerSubmitButton = document.querySelector(
-        '#beta-form #close-submit'
+        "#beta-form #close-submit"
       );
-      const banner = document.querySelector('.banner');
-      let buttonClosed = localStorage.getItem('buttonClosed');
+      const banner = document.querySelector(".banner");
+      let buttonClosed = localStorage.getItem("buttonClosed");
 
-      bannerSubmitButton.addEventListener('click', () => {
-        banner.classList.add('close');
-        localStorage.setItem('buttonClosed', 'true');
+      bannerSubmitButton.addEventListener("click", () => {
+        banner.classList.add("close");
+        localStorage.setItem("buttonClosed", "true");
       });
-      if (buttonClosed == 'true') {
-        banner.classList.add('close');
+      if (buttonClosed == "true") {
+        banner.classList.add("close");
       }
     </script>
-
-    </body>
+  </body>
 </html>

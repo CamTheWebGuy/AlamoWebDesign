@@ -1,83 +1,153 @@
 ---
-layout: 'base.html'
-description: 'Get the latest tips &amp; tricks for your website and SEO campaigns from Alamo Web Design in San Antonio, TX. Call today!'
-metaTitle: 'Title that shows up on google searches'
-tagTitle: 'Alamo Web Design Blog'
-mainCSS: '/css/local.css'
-preloadCSS: '/css/blog.css'
-permalink: 'blog/'
+layout: "base.html"
+description: "Get the latest tips &amp; tricks for your website and SEO campaigns from Alamo Web Design in San Antonio, TX. Call today!"
+metaTitle: "Title that shows up on google searches"
+tagTitle: "Alamo Web Design Blog"
+mainCSS: "/css/blog2.css"
+preloadCSS: "/css/local.css"
+permalink: "blog/"
 eleventyNavigation:
-    key: Blog
-    order: 500
+  key: Blog
+  order: 500
 ---
 
 <!-- Enter html code below -->
 
- <section id="header">
-      <p class="container">Blog / Recent Posts</p>
-    </section>
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
 
-    <main>
-      <section id="blog">
-        <!-- ============================================ -->
-        <!--                 BLOG CONTENT                 -->
-        <!-- ============================================ -->
+<div id="banner-310">
+  <div class="cs-container">
+    <span class="cs-int-title text-white">Blog / Recent Posts</span>
+  </div>
+  <!--Background Image-->
+  <picture class="cs-background">
+    <source
+      media="(max-width: 600px)"
+      srcset="/assets/img/web-design-company-near-me.jpeg"
+    />
+    <source
+      media="(min-width: 601px)"
+      srcset="/assets/img/web-design-company-near-me.jpeg"
+    />
+    <img
+      aria-hidden="true"
+      loading="lazy"
+      decoding="async"
+      src="/assets/img/web-design-company-near-me.jpeg"
+      alt="Web Design Agency Near Me"
+      width="1920"
+      height="375"
+    />
+  </picture>
+</div>
 
-         {% if collections.post | length == 0 %}
-            <h1>No Recent Posts</h1>
-        {% endif %}
-        {%- for post in collections.post | reverse -%}
+<!-- ============================================ -->
+<!--                 Content Page                 -->
+<!-- ============================================ -->
 
-        <article class="blog">
-          <div class="blog__post container">
-            <div class="blog__post--header">
-              <picture class="blog-mainImage">
-                    <img
-                        src="{{ post.data.image }}"
-                        alt="{{ post.data.imageAlt }}"
-                        width="795"
-                        height="400"
-                        decoding="async"
-/>
-                </picture>
-              <h1>
-                {{ post.data.blogTitle }}
-              </h1>
-              <div class="blog__post--info">
+<!-- ============================================ 
+    This Stitch is used for content heavy interior pages
+    that have no design or layout.  Often times these are 
+    content silos where you talk extensively about a topic
+    to educate your visitors and rank on Google for the 
+    content.  These are great for pages that have a TON
+    of content.  Design isn't important here, it's all 
+    about making the content accessible and easy to read.
+================================================= -->
+
+<!-- ============================================ -->
+<!--                 Recent Posts                 -->
+<!-- ============================================ -->
+
+<section id="blog-1366">
+  <div class="cs-container">
+    {% if collections.post | length == 0 %}
+    <h1>No Recent Posts</h1>
+    {% endif %}
+
+    <ul class="cs-card-group">
+      {%- for post in collections.post | reverse -%}
+      <li class="cs-item">
+        <a class="cs-link" href="{{ post.url }}">
+          <picture class="cs-picture">
+            <source
+              media="(max-width: 600px)"
+              srcset="
+              {{ post.data.image }}
+              "
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="
+              {{ post.data.image }}
+              "
+            />
+            <img
+              decoding="async"
+              src="{{ post.data.image }}"
+              alt="{{ post.data.imageAlt }}"
+              width="413"
+              height="374"
+              aria-hidden="true"
+            />
+          </picture>
+          <div class="cs-item-text">
+            <h3 class="cs-h3">
+              {{ post.data.blogTitle }}
+              <picture class="cs-icon-wrapper">
                 <img
+                  class="cs-icon"
+                  decoding="async"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/agency-arrow-upper-right.svg"
+                  alt="arrow"
+                  width="413"
+                  height="374"
                   aria-hidden="true"
-                  src="https://camthewebguy.com/wp-content/uploads/2022/03/IMG_1799.png"
-                  alt="Ryan Postell"
                 />
-                <div class="blog__post--profile">
-                  <h3>{{ post.data.author }}</h3>
-                  <a href="#">{{ post.date | postDate }}</a><br />
-                </div>
-              </div>
+              </picture>
+            </h3>
+            <div class="cs-info">
+              <span class="cs-date">
+                <img
+                  class="cs-date-icon"
+                  decoding="async"
+                  src="/assets/img/cal.svg"
+                  alt="calendar"
+                  width="413"
+                  height="374"
+                  aria-hidden="true"
+                />
+                {{ post.date | postDate }}
+              </span>
+              <span class="cs-date">
+                <img
+                  class="cs-date-icon"
+                  decoding="async"
+                  src="https://camthewebguy.com/wp-content/uploads/2022/03/IMG_1799.png"
+                  alt="calendar"
+                  width="413"
+                  height="374"
+                  aria-hidden="true"
+                />
+                {{ post.data.author }}
+              </span>
             </div>
-            <div aria-hidden="true" class="line"></div>
-            <p>
-             {{ post.data.blogDescription }}
-            </p>
-            <button
-              class="button-solid"
-              onclick="location.href='{{ post.url }}'"
-              type="button"
-            >
-              Read More
-            </button>
           </div>
-        </article>
-{%- endfor -%}
+        </a>
+      </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+  <div class="cs-bubbles" aria-hidden="true"></div>
+</section>
 
+<!-- ============================================ -->
+<!--                   SIDE BAR                   -->
+<!-- ============================================ -->
 
-      </section>
-
-       <!-- ============================================ -->
-      <!--                   SIDE BAR                   -->
-      <!-- ============================================ -->
-
-      <section id="side-bar" class="container">
+<!-- <section id="side-bar" class="container">
         {% include "sidebar.html" %}
       </section>
-    </main>
+    </main> -->

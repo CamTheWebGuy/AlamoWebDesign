@@ -1,0 +1,406 @@
+/*-- -------------------------- -->
+<---          Banner            -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #banner-310 {
+        /* 144px - 252px */
+        padding-top: clamp(9rem, 25vw, 15.75rem);
+        /* 80px - 140px */
+        padding-bottom: clamp(5rem, 13vw, 8.75rem);
+        position: relative;
+        z-index: 1;
+    }
+    #banner-310 .cs-container {
+        width: 100%;
+        max-width: 80rem;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #banner-310 .cs-int-title {
+        /* 39px - 49px */
+        font-size: clamp(2.4375rem, 4.5vw, 3.0625rem);
+        font-weight: 900;
+        line-height: 1.2em;
+        text-align: center;
+        max-width: 43.75rem;
+        margin: 0 auto 0.75rem;
+        color: var(--bodyTextColorWhite);
+        position: relative;
+    }
+    #banner-310 .cs-breadcrumbs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #banner-310 .cs-link {
+        /* 14px - 16px */
+        font-size: clamp(0.875rem, 1.5vw, 1rem);
+        line-height: 1.2em;
+        text-decoration: none;
+        color: var(--bodyTextColorWhite);
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #banner-310 .cs-link:last-of-type {
+        /* remove the chevron on the last list item */
+    }
+    #banner-310 .cs-link:last-of-type::after {
+        display: none;
+    }
+    #banner-310 .cs-link:after {
+        /* chevron - added as pseudo to make adding and removing them easier */
+        content: "";
+        width: 0.4375rem;
+        height: 0.75rem;
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+        background: url("https://csimg.nyc3.digitaloceanspaces.com/Banners/chevron-right.svg");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #banner-310 .cs-link.cs-active {
+        color: var(--primaryLight);
+    }
+    #banner-310 .cs-background {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        z-index: -1;
+    }
+    #banner-310 .cs-background:before {
+        /* black overlay box */
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: #000;
+        opacity: 0.72;
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    #banner-310 .cs-background img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+/*-- -------------------------- -->
+<---        Recent Posts        -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    @keyframes floatAnimation {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-2rem);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+    @keyframes floatAnimation2 {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-3rem);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+    #blog-1366 {
+        padding: 6rem 1rem;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+    }
+    #blog-1366 .cs-container {
+        width: 100%;
+        /* changes to 1280px on desktop */
+        max-width: 43.75rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 48px - 64px */
+        gap: clamp(3rem, 6vw, 4rem);
+    }
+    #blog-1366 .cs-content {
+        /* set text align to left if content needs to be left aligned */
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: center;
+    }
+
+    #blog-1366 .cs-title {
+        max-width: 20ch;
+    }
+    #blog-1366 .cs-topper {
+        color: var(--secondary);
+    }
+    #blog-1366 .cs-card-group {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 1rem;
+    }
+    #blog-1366 .cs-item {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        grid-column: span 12;
+    }
+    #blog-1366 .cs-item:hover .cs-h3,
+    #blog-1366 .cs-item:hover .cs-date,
+    #blog-1366 .cs-item:hover .cs-category {
+        color: #fff;
+    }
+    #blog-1366 .cs-item:hover .cs-item-text {
+        background-color: var(--primary);
+    }
+    #blog-1366 .cs-item:hover .cs-icon-wrapper {
+        border-color: #fff;
+    }
+    #blog-1366 .cs-item:hover .cs-icon,
+    #blog-1366 .cs-item:hover .cs-date-icon {
+        filter: brightness(1000%) grayscale(1);
+    }
+    #blog-1366 .cs-item:hover .cs-icon {
+        transform: rotate(45deg);
+    }
+    #blog-1366 .cs-item:hover .cs-category::before {
+        background-color: #fff;
+        opacity: 0.2;
+    }
+    #blog-1366 .cs-link {
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        /* if one card has more content then the others, the card will stretch to fill the parent container */
+        flex-grow: 1;
+        gap: 1rem;
+    }
+    #blog-1366 .cs-picture {
+        width: 100%;
+        height: 20rem;
+        margin: 0;
+        border-radius: 1.5rem;
+        display: block;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+    }
+    #blog-1366 .cs-picture img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    #blog-1366 .cs-item-text {
+        padding: 1.25rem;
+        background-color: #f7f7f7;
+        border-radius: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* makes the item text the element that grows to fill the container */
+        flex-grow: 1;
+        transition: background-color 0.3s;
+    }
+    #blog-1366 .cs-h3 {
+        /* 20px - 25px */
+        font-size: clamp(1.25rem, 1.8vw, 1.5625rem);
+        line-height: 1.2em;
+        text-align: left;
+        margin: 0;
+        color: #1a1a1a;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        transition: color 0.3s;
+    }
+    #blog-1366 .cs-icon-wrapper {
+        width: 3rem;
+        height: 3rem;
+        border: 1px solid #bababa;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* prevents the parent flexbox from shrinking the icon */
+        flex-shrink: 0;
+        transition: border-color 0.3s;
+    }
+    #blog-1366 .cs-icon {
+        width: auto;
+        height: 0.75rem;
+        transition:
+            filter 0.3s,
+            transform 0.3s;
+    }
+    #blog-1366 .cs-info {
+        margin: 1rem 0 0;
+        padding: 1rem 0 0;
+        border-top: 1px solid #e8e8e8;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #blog-1366 .cs-date {
+        font-size: 0.875rem;
+        line-height: 1.5em;
+        text-align: left;
+        color: #1a1a1a;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        transition: color 0.3s;
+    }
+    #blog-1366 .cs-date-icon {
+        width: auto;
+        height: 1.5rem;
+        transition: filter 0.3s;
+    }
+    #blog-1366 .cs-category {
+        font-size: 0.875rem;
+        /* centers the text if the category bullet has to span multiple lines */
+        text-align: center;
+        padding: 0.25rem 1rem;
+        color: #1a1a1a;
+        border-radius: 5rem;
+        position: relative;
+        z-index: 0;
+        overflow: hidden;
+    }
+    #blog-1366 .cs-category::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: #e8e8e8;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    #blog-1366 .cs-bubbles {
+        width: 20.0625rem;
+        height: 26.4375rem;
+        position: absolute;
+        top: 48.625rem;
+        right: -8.75rem;
+        z-index: -1;
+    }
+    #blog-1366 .cs-bubbles:before {
+        /* white border bubble */
+        content: "";
+        width: 16.5rem;
+        height: 16.5rem;
+        background: transparent;
+        opacity: 1;
+        border: 1px solid #1a1a1a;
+        border-radius: 50%;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        animation-name: floatAnimation;
+        animation-duration: 5s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+    }
+    #blog-1366 .cs-bubbles:after {
+        /* orange bubble */
+        content: "";
+        width: 16.5rem;
+        height: 16.5rem;
+        background: var(--primary);
+        opacity: 0.1;
+        border-radius: 50%;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        animation-name: floatAnimation2;
+        animation-duration: 14s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+    }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #blog-1366 .cs-item {
+        grid-column: span 6;
+    }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #blog-1366 .cs-container {
+        max-width: 80rem;
+    }
+    #blog-1366 .cs-item {
+        grid-column: span 4;
+    }
+}
+/* Large Desktop - 1300px */
+@media only screen and (min-width: 81.25rem) {
+    #blog-1366 .cs-bubbles {
+        margin-right: -61.875rem;
+        right: 50%;
+    }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode #blog-1366 .cs-topper {
+        color: var(--secondaryLight);
+    }
+    body.dark-mode #blog-1366 .cs-title,
+    body.dark-mode #blog-1366 .cs-text,
+    body.dark-mode #blog-1366 .cs-h3,
+    body.dark-mode #blog-1366 .cs-date,
+    body.dark-mode #blog-1366 .cs-category {
+        color: var(--bodyTextColorWhite);
+    }
+    body.dark-mode #blog-1366 .cs-text,
+    body.dark-mode #blog-1366 .cs-date,
+    body.dark-mode #blog-1366 .cs-category {
+        opacity: 0.8;
+    }
+    body.dark-mode #blog-1366 .cs-item-text {
+        background-color: var(--medium);
+    }
+    body.dark-mode #blog-1366 .cs-category::before {
+        background-color: var(--accent);
+    }
+}
+
+                                

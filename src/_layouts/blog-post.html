@@ -1,73 +1,89 @@
 ---
-layout: 'base.html'
-mainCSS: '/css/local.css'
-preloadCSS: '/css/blog.css'
+layout: "base.html"
+mainCSS: "/css/local.css"
+preloadCSS: "/css/post.css"
 eleventyComputed:
-    description: '{{ blogDescription }}'
-    metaTitle: '{{ blogTitle }}'
-    tagTitle: '{{ titleTag }}'
-    preloadImg: '{{ image }}'
-    permalink: '/blog/{{ pageName | slug }}/index.html'
+  description: "{{ blogDescription }}"
+  metaTitle: "{{ blogTitle }}"
+  tagTitle: "{{ titleTag }}"
+  preloadImg: "{{ image }}"
+  permalink: "/blog/{{ pageName | slug }}/index.html"
 ---
 
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
 
+<div id="banner-310">
+  <div class="cs-container">
+    <span class="cs-int-title text-white">Blog / Recent Posts</span>
+  </div>
+  <!--Background Image-->
+  <picture class="cs-background">
+    <source
+      media="(max-width: 600px)"
+      srcset="/assets/img/web-design-company-near-me.jpeg"
+    />
+    <source
+      media="(min-width: 601px)"
+      srcset="/assets/img/web-design-company-near-me.jpeg"
+    />
+    <img
+      aria-hidden="true"
+      loading="lazy"
+      decoding="async"
+      src="/assets/img/web-design-company-near-me.jpeg"
+      alt="Web Design Agency Near Me"
+      width="1920"
+      height="375"
+    />
+  </picture>
+</div>
 
+<!-- ============================================ -->
+<!--                 Content Page                 -->
+<!-- ============================================ -->
 
+<!-- ============================================ 
+    This Stitch is used for content heavy interior pages
+    that have no design or layout.  Often times these are 
+    content silos where you talk extensively about a topic
+    to educate your visitors and rank on Google for the 
+    content.  These are great for pages that have a TON
+    of content.  Design isn't important here, it's all 
+    about making the content accessible and easy to read.
+================================================= -->
 
-<section id="header">
-      <p class="container">Blog / Recent Posts</p>
-    </section>
+<section id="content-page-1533">
+  <div class="cs-container">
+    <div class="cs-content">
+      <img
+        src="{{ image }}"
+        alt="{{ imageAlt }}"
+        width="795"
+        height="400"
+        decoding="async"
+      />
+      <h1 class="cs-title blog-title">{{ blogTitle }}</h1>
 
-    <main>
-      <section id="blog">
-        <!-- ============================================ -->
-        <!--                 BLOG CONTENT                 -->
-        <!-- ============================================ -->
-
-        <article class="blog">
-          <div class="blog__post container">
-            <div class="blog__post--header">
-              <picture class="blog-mainImage">
-                    <img src="{{ image }}" alt="{{ imageAlt }}" width="795" height="400" decoding="async"/>
-                </picture>
-              <h1>
-                {{ blogTitle }}
-              </h1>
-              <div class="blog__post--info">
-                <img
+      <div class="post-info">
+                <img class="post-author"
                   aria-hidden="true"
                   src="https://camthewebguy.com/wp-content/uploads/2022/03/IMG_1799.png"
                   alt="Cameron Anchondo"
                 />
-                <div class="blog__post--profile">
+                <div class="post-meta">
                   <h3>{{ author }}</h3>
                   <a href="#">{{ date | postDate }}</a><br />
                 </div>
               </div>
-            </div>
-            <div aria-hidden="true" class="line"></div>
-<section id="blog-content">
-                {{ content | safe }}
-            </section>
-
             
-           
-          </div>
-        </article>
+            <div aria-hidden="true" class="line"></div>
 
-
-
-      </section>
-
-       <!-- ============================================ -->
-      <!--                   SIDE BAR                   -->
-      <!-- ============================================ -->
-
-      <section id="side-bar" class="container">
-        {% include "sidebar.html" %}
-      </section>
-    </main>
-
-
-
-
+            <div class="post-content">
+              {{ content | safe }}
+            </div>
+    </div>
+  </div>
+</div>
+</section>

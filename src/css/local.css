@@ -333,7 +333,7 @@ html.clicked {
   opacity: 0.95;
 }
 #page-header {
-  background: url(/images/bbb2f4c0724e87a13ec60d3604b0b3bb8d14eb23/coding-screen.jpg);
+  background: url(../assets/img/web-design-san-antonio.jpg);
 }
 @media screen and (min-width: 500px) and (max-width: 1025px) {
   main {
@@ -2001,7 +2001,7 @@ footer-old {
 }
 #page-header {
   height: 220px;
-  background: url(../assets/img/coding-screen.jpeg);
+  background: url(../assets/img/web-design-san-antonio.jpg);
   background-position: left;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2036,6 +2036,8 @@ footer-old {
     rgba(0, 122, 213, 0.427608543417367) 100%
   );
 }
+
+
 #page-header h1 {
   color: #fff;
   font-size: 36px;
@@ -2079,7 +2081,7 @@ footer-old {
   #page-header {
     height: 400px;
     background-repeat: no-repeat;
-    background-position: center 100%;
+    background-position: center 0%;
   }
   .desktop-display {
     display: block;
@@ -7077,4 +7079,8 @@ h3 {
     margin-top: -6px;
     z-index: 9000;
     position: absolute;
+}
+
+#gallery-1374 .cs-desc{
+  color:black!important;
 }
